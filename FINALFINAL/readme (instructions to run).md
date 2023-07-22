@@ -1,11 +1,6 @@
-Complete list of project dependencies and packages
-asgiref==3.7.2
-Django==4.2.3  
-sqlparse==0.4.4
-tzdata==2023.3
-
-
 Instructions on how to run the project (both Admin and Customer View)
+
+Run server using "python manage.py runserver" while in project directory
 
 For Customer:
 Use http://127.0.0.1:8000/ to enter the home screen or main dashboard
