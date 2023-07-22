@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quotation Page</title>
+</head>
+<body>
+    <h1>Quotation Page</h1>
+
+    <form method="post">
+        {% csrf_token %}
+        <label for="pen_count">Pen Count:</label>
+        <input type="number" name="pen_count" value="{{ quotation.Pen_count }}">
+
+        <label for="eraser_count">Eraser Count:</label>
+        <input type="number" name="eraser_count" value="{{ quotation.Eraser_count }}">
+
+        <label for="notebook_count">Notebook Count:</label>
+        <input type="number" name="notebook_count" value="{{ quotation.Notebook_count }}">
+
+        <label for="stapler_count">Stapler Count:</label>
+        <input type="number" name="stapler_count" value="{{ quotation.Stapler_count }}">
+
+        <label for="calculator_count">Calculator Count:</label>
+        <input type="number" name="calculator_count" value="{{ quotation.Calculator_count }}">
+
+        <button type="submit">Update Quotation</button>
+    </form>
+
+    <h2>Current Quotation</h2>
+    <p>Pen Count: {{ quotation.Pen_count }}</p>
+    <p>Eraser Count: {{ quotation.Eraser_count }}</p>
+    <p>Notebook Count: {{ quotation.Notebook_count }}</p>
+    <p>Stapler Count: {{ quotation.Stapler_count }}</p>
+    <p>Calculator Count: {{ quotation.Calculator_count }}</p>
+</body>
+</html>
